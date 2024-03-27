@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: BlocProvider(
-        create: (context) => GoogleMapsBloc(),
+        create: (context) => GoogleMapsBloc(liveLocatinBloc: ),
         child: const TrackingView(),
       ),
     );
